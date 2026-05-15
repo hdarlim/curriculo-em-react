@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: 'Fira Code', 'Courier New', Courier, monospace;
+  line-height: 1.6;
+}
+
+.resume-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  padding-bottom: 56px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: 2px solid #333333;
+  max-height: calc(100vh - 32px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Header */
+.header {
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+}
+
+.name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.profession {
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin-bottom: 20px;
+}
+
+/* Divider */
+.divider {
+  border: none;
+  border-top: 1px solid #333333;
+  margin: 20px 0;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+/* Entry (para Experiência e Educação) */
+.entry {
+  margin-bottom: 30px;
+  padding-left: 20px;
+  border-left: 2px solid #333333;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+  gap: 20px;
+}
+
+.entry-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.entry-period {
+  font-size: 0.9rem;
+  color: #999999;
+  white-space: nowrap;
+}
+
+.entry-company {
+  font-size: 0.95rem;
+  color: #aaaaaa;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+.entry-description {
+  font-size: 0.95rem;
+  color: #cccccc;
+  line-height: 1.7;
+}
+
+/* Contact Info */
+.contact-info {
+  padding-left: 20px;
+  border-left: 2px solid #333333;
+}
+
+.contact-info p {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+/* Skills */
+.skills-group {
+  margin-bottom: 25px;
+}
+
+.skills-category {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding-left: 20px;
+  border-left: 2px solid #333333;
+  padding-bottom: 10px;
+}
+
+.skill {
+  background-color: #2a2a2a;
+  border: 1px solid #333333;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  color: #ffffff;
+  display: inline-block;
+}
+
+/* Footer */
+.footer {
+  margin-top: 50px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666666;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .resume-container {
+    padding: 30px 15px;
+    border-left: none;
+    border-right: none;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .profession {
+    font-size: 1rem;
+  }
+
+  .entry-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .entry-period {
+    font-size: 0.85rem;
+  }
+
+  .skills-list {
+    gap: 10px;
+  }
+
+  .skill {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-container {
+    padding: 20px 10px;
+  }
+
+  .name {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .profession {
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.1rem;
+  }
+
+  .entry-title {
+    font-size: 1rem;
+  }
+
+  .contact-info p,
+  .entry-description,
+  .entry-company {
+    font-size: 0.9rem;
+  }
+
+  .skill {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+  }
+}
